@@ -1,7 +1,7 @@
 #' Practice 1 - Research Compendium
-#' 
+#'
 #' @author Nicolas Casajus \email{nicolas.casajus@fondationbiodiversite.fr}
-#' 
+#'
 #' @date 2022/11/16
 
 
@@ -19,3 +19,7 @@ pkgload::load_all()
 ## Run Project ----
 
 source(here::here("analyses", "download-data.R"))
+
+
+## Display results ----
+rmarkdown::render("index.Rmd", "html_document")
